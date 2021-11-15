@@ -1,17 +1,14 @@
-<div class="spotlight-wrapper" style="display: none">
+<div class="spotlight-wrapper spotlight-hidden">
     <div class="spotlight-form-wrapper">
         <form>
-            <input type="text" name="search-value" placeholder="Search WordPress" onkeyup="handleTextEntry()"/>
+            <input type="text" name="search-value" placeholder="Search WordPress"/>
         </form>
 
-        <div class="spotlight-results">
-            
-            <div>Found an item</div>
-            <div>File.jpg</div>
-            <div>Something</div>
-            <div>Another thing</div>
-            
+        <div class="spotlight-results-wrapper">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            <div class="spotlight-results"></div>
         </div>
+
     </div>
     
 </div>

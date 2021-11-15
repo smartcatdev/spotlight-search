@@ -25,10 +25,9 @@ function get_plugin_url($url) {
     return plugin_dir_url(__FILE__) . $url;
 }
 
-add_action('init', 'spotlight\include_files');
 function include_files() {
-    if(is_admin()) {
-        require get_includes_path('functions-general.php');
-    }
-    
+    // if(is_admin()) {
+    require get_includes_path('functions-general.php');
+    // }
 }
+add_action('init', 'spotlight\include_files');
